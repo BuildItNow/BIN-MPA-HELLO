@@ -45,8 +45,7 @@ define(
 			},
 			DataCenter:"application/dataCenter",
 			HUDManager:"bin/core/hudManager",	
-			NavigationController:"bin/web/core/navigationController",
-			MapManager:"bin/core/mapManager"
+			NavigationController:"bin/web/core/navigationController"
 		},
 		ui:
 		{

@@ -58,10 +58,14 @@ var config =
 			include:
 			[
 				"view", 
+				"html",
+			    "map",
 				"bin/core/application", 
 				"bin/web/core/webApplication", 
     			"bin/web/core/main",
-    			"bin/web/core/viewManager",
+    			"bin/web/core/route",
+    			"bin/web/core/router",
+    			"bin/web/core/navigationController",
     			"bin/core/classHierarchyLoader",
     			"bin/core/netManager",    
     			"bin/core/dataCenter",    
@@ -74,12 +78,6 @@ var config =
 			exclude:["#3party-web-core"],
 			//out:"",
 		},
-		"bin-web-stubview":
-		{
-			include:["bin/web/common/pcStubView"],
-			exclude:["#bin-web-core"],
-			//out:"",
-		},
 		"bin-mobile-core":
 		{
 			include:
@@ -88,7 +86,6 @@ var config =
 				"bin/web/core/mpaApplication", 
 	    		"bin/core/pageView",
 	    		"bin/core/naviPageView",
-	    		"bin/web/core/navigationController",
 	    		"bin/core/hudManager",
 				"bin/common/hudView",
 			    "bin/common/alertView",
@@ -109,7 +106,7 @@ var config =
 				"css!bin/common/statusView.css",
 				"text!bin/res/html/defaultNaviBar.html"
 			],
-			exclude:["#3party-mobile-core",],
+			exclude:["#3party-mobile-core"],
 			//out:"",
 		},
 		"bin-mobile-listview":
@@ -154,7 +151,7 @@ var config =
 			include:["#bin-mobile-swipeview", "bin/common/tabBarView", "bin/common/tabView"],
 			exclude:["#bin-mobile-core"],
 			//out:"",
-		},
+		}
 	}
 }
 
