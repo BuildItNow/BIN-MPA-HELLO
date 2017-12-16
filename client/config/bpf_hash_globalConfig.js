@@ -1,4 +1,4 @@
-define(
+define("config/bpf_hash_globalConfig",
 {
 	name: "MPA-HELLO",
 	appID: "com.bin.mpa-hello",
